@@ -1,7 +1,8 @@
 from sanic import response
-from run import app
+
+from api_1._init_ import api_1
 
 
-@app.route('/a')
+@api_1.route('/a')
 def a(request):
     return response.text('11')
