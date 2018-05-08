@@ -32,8 +32,8 @@ from qiniu import Auth
 # r=requests.get(private_url)
 # assert r.status_code==200
 
-@api_1.route('/qiniudown')
-async def qiniudown(request):
+@api_1.route('/qiniudown/<tag1>/<tag2>')
+async def qiniudown(request,tag1,tag2):
     print(request)
 
-    return response.json({'link': 'a'}, 200)
+    return response.json({'a': format(tag1),'b': format(tag2)}, 200)
