@@ -6,7 +6,7 @@ worker_connections=100
 worker_class='sanic.worker.GunicornWorker'
 timeout=30
 keepalive=2
-chdir='/root/sanicapi'
+# chdir='/root/sanicapi'
 
 spew=False
 daemon=False
