@@ -2,7 +2,7 @@ import asyncpg
 
 from sanic import response
 
-import api_1
+from api_1.__init__  import api_1
 from qiniu.services.cdn.manager import create_timestamp_anti_leech_url
 import time
 

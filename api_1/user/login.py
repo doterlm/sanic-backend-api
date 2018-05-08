@@ -4,10 +4,11 @@ import asyncpg
 import uvloop
 from sanic import response
 
-import api_1
 
 
 # api_1=api_1.getbp()
+
+from api_1.__init__  import api_1
 
 @api_1.route('/a')
 def a(request):
