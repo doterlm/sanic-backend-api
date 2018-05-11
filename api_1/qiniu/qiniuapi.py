@@ -16,7 +16,7 @@ async def qiniudown(request,tag1):
     filename = tag1+'.MP3'
     base_url = 'http://%s/%s' % (bucket_domain, filename)
     private_url=q.private_download_url(base_url,expires=3600)
-    return response.json({'a': format(private_url)}, 200)
+    return response.json({'url': format(private_url)}, 200)
 
 # 上传歌曲
 # @api_1.route('/qiniuup/<>')
